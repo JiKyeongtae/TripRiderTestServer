@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+
+googleai:
+  api:
+    key: "AIzaSyC2mSq6cYbYIVTMYWuF_FYvjblNPMQ_MkI"
+
+gemini:
+  baseurl: "https://generativelanguage.googleapis.com"
+  model: "gemini-2.5-flash"
