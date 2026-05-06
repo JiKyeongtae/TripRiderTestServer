@@ -12,6 +12,7 @@ spring:
     open-in-view: false
     properties:
       hibernate.format_sql: true
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
 
   servlet:
     multipart:
