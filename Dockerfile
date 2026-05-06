@@ -8,4 +8,4 @@ RUN chmod +x gradlew
 
 RUN ./gradlew build -x test
 
-CMD ["sh", "-c", "java -jar build/libs/*.jar"]
+CMD ["java", "-jar", "build/libs/TripRider-0.0.1-SNAPSHOT.jar"]
