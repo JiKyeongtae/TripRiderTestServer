@@ -3,6 +3,10 @@ server:
   forward-headers-strategy: framework
 
 spring:
+
+  thymeleaf:
+    check-template-location: false
+
   datasource:
     url: ${SPRING_DATASOURCE_URL:${DB_URL}}
     username: ${SPRING_DATASOURCE_USERNAME:${DB_USERNAME}}
@@ -28,6 +32,7 @@ spring:
   security:
     oauth2:
       client:
+
         registration:
 
           google:
@@ -52,6 +57,7 @@ spring:
             client-name: Kakao
 
         provider:
+
           kakao:
             authorization-uri: https://kauth.kakao.com/oauth/authorize
             token-uri: https://kauth.kakao.com/oauth/token
@@ -89,6 +95,7 @@ gemini:
 logging:
   level:
     root: warn
+    org.springframework.boot: info
 
 management:
   endpoints:

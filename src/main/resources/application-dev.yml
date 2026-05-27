@@ -1,4 +1,8 @@
 spring:
+
+  thymeleaf:
+    check-template-location: false
+
   datasource:
     url: ${DB_URL}
     driver-class-name: org.postgresql.Driver
@@ -21,6 +25,7 @@ spring:
   security:
     oauth2:
       client:
+
         registration:
 
           google:
@@ -45,6 +50,7 @@ spring:
             client-name: Kakao
 
         provider:
+
           kakao:
             authorization-uri: https://kauth.kakao.com/oauth/authorize
             token-uri: https://kauth.kakao.com/oauth/token
