@@ -1,8 +1,9 @@
-# application.yml
-
 spring:
   profiles:
     active: ${SPRING_PROFILES_ACTIVE:dev}
+
+server:
+  port: ${PORT:8080}
 
 googleai:
   api:
