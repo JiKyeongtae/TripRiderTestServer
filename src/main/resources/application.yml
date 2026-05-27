@@ -1,10 +1,12 @@
+# application.yml
+
 spring:
   profiles:
-    active: dev
+    active: ${SPRING_PROFILES_ACTIVE:dev}
 
 googleai:
   api:
-    key: "AIzaSyC2mSq6cYbYIVTMYWuF_FYvjblNPMQ_MkI"
+    key: ${GOOGLE_AI_KEY}
 
 gemini:
   baseurl: "https://generativelanguage.googleapis.com"
