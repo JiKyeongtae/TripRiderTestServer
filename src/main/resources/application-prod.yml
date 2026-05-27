@@ -98,6 +98,10 @@ logging:
     org.springframework.boot: info
 
 management:
+  endpoint:
+    health:
+      enabled: true
+
   endpoints:
     web:
       exposure:
